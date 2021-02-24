@@ -1,0 +1,75 @@
+\hypertarget{classBoard}{}\section{Board Class Reference}
+\label{classBoard}\index{Board@{Board}}
+
+
+The adstracted portion of \hyperlink{classBoard}{Board}.  
+
+
+
+
+{\ttfamily \#include $<$Board.\+hpp$>$}
+
+
+
+Inheritance diagram for Board\+:
+% FIG 0
+
+
+Collaboration diagram for Board\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBoard_a04c486ebbe8171dfa7fbc6dbd3bdb32d}\label{classBoard_a04c486ebbe8171dfa7fbc6dbd3bdb32d}} 
+\hyperlink{classBoard_a04c486ebbe8171dfa7fbc6dbd3bdb32d}{Board} (S\+D\+L\+\_\+\+Renderer $\ast$\hyperlink{classEntity_a2747dfdd9fa4fe743c8b80450bc99dbd}{renderer})
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classBoard}{Board} using the S\+D\+L\+\_\+\+Renderer that is passed in to render it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoard_af73f45730119a1fd8f6670f53f959e68}\label{classBoard_af73f45730119a1fd8f6670f53f959e68}} 
+\hyperlink{classBoard_af73f45730119a1fd8f6670f53f959e68}{$\sim$\+Board} ()
+\begin{DoxyCompactList}\small\item\em Destroys this block and deallocates the memory used for it. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoard_aa1fb89db8206ace3f973f2f911af4125}\label{classBoard_aa1fb89db8206ace3f973f2f911af4125}} 
+void \hyperlink{classBoard_aa1fb89db8206ace3f973f2f911af4125}{Update} (float delta)
+\begin{DoxyCompactList}\small\item\em Updates this brick to match the game state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoard_a2cdb83c07225dd83366ce10ea2978dd8}\label{classBoard_a2cdb83c07225dd83366ce10ea2978dd8}} 
+void \hyperlink{classBoard_a2cdb83c07225dd83366ce10ea2978dd8}{Render} (float delta)
+\begin{DoxyCompactList}\small\item\em Renders this \hyperlink{classBrick}{Brick} at its location. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoard_af11cf454515ef90de6c659a79bcbac00}\label{classBoard_af11cf454515ef90de6c659a79bcbac00}} 
+void \hyperlink{classBoard_af11cf454515ef90de6c659a79bcbac00}{Create\+Level} ()
+\begin{DoxyCompactList}\small\item\em Creates the level of this game with bricks set. \end{DoxyCompactList}\item 
+void \hyperlink{classBoard_a5238b7d770a9b834b8eff70af43c58b7}{Create\+Level} (string filepath)
+\begin{DoxyCompactList}\small\item\em Creates the level of this game with bricks set using a files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBoard_ad029c8458c69c5cdfe0b7accef5c96ec}\label{classBoard_ad029c8458c69c5cdfe0b7accef5c96ec}} 
+float \hyperlink{classBoard_ad029c8458c69c5cdfe0b7accef5c96ec}{brickoffsetx}
+\begin{DoxyCompactList}\small\item\em The brick positions in x, y format. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBoard_a13ead003baf29a9d830a73629f2650f2}\label{classBoard_a13ead003baf29a9d830a73629f2650f2}} 
+float {\bfseries brickoffsety}
+\item 
+\mbox{\Hypertarget{classBoard_accf8fbe944c20e73ded489d0d7d0837b}\label{classBoard_accf8fbe944c20e73ded489d0d7d0837b}} 
+\hyperlink{classBrick}{Brick} {\bfseries bricks} \mbox{[}B\+O\+A\+R\+D\+\_\+\+W\+I\+D\+TH\mbox{]}\mbox{[}B\+O\+A\+R\+D\+\_\+\+H\+E\+I\+G\+HT\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The adstracted portion of \hyperlink{classBoard}{Board}. 
+
+\hyperlink{classBoard}{Board} extends \hyperlink{classEntity}{Entity}, which contains 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoard_a5238b7d770a9b834b8eff70af43c58b7}\label{classBoard_a5238b7d770a9b834b8eff70af43c58b7}} 
+\index{Board@{Board}!Create\+Level@{Create\+Level}}
+\index{Create\+Level@{Create\+Level}!Board@{Board}}
+\subsubsection{\texorpdfstring{Create\+Level()}{CreateLevel()}}
+{\footnotesize\ttfamily void Board\+::\+Create\+Level (\begin{DoxyParamCaption}\item[{string}]{filepath }\end{DoxyParamCaption})}
+
+
+
+Creates the level of this game with bricks set using a files. 
+
+Takes the level from the text file using 0\textquotesingle{}s and 1\textquotesingle{}s. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Board.\+hpp\end{DoxyCompactItemize}

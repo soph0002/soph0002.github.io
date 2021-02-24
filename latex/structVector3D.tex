@@ -1,0 +1,79 @@
+\hypertarget{structVector3D}{}\section{Vector3D Struct Reference}
+\label{structVector3D}\index{Vector3D@{Vector3D}}
+
+
+{\ttfamily \#include $<$Tiny\+Math.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structVector3D_aefc51b14ad29d8c0844bda043c97db6e}\label{structVector3D_aefc51b14ad29d8c0844bda043c97db6e}} 
+\hyperlink{structVector3D_aefc51b14ad29d8c0844bda043c97db6e}{Vector3D} ()=default
+\begin{DoxyCompactList}\small\item\em Default conostrutcor. \end{DoxyCompactList}\item 
+\hyperlink{structVector3D_a7b0f18fa43c7a90588dedcd814122359}{Vector3D} (float a, float b, float c)
+\item 
+float \& \hyperlink{structVector3D_a9ada0b9382fdaf3bade67438f829280d}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\item 
+const float \& \hyperlink{structVector3D_aeb8dfce8e40587899758e9f7d5752dc6}{operator\mbox{[}$\,$\mbox{]}} (int i) const
+\item 
+\hyperlink{structVector3D}{Vector3D} \& \hyperlink{structVector3D_a83d5f64613f79d60e080dc04689f1c2b}{operator$\ast$=} (float s)
+\item 
+\mbox{\Hypertarget{structVector3D_a645dc0982d4fd81fc96ce56a6cc354a6}\label{structVector3D_a645dc0982d4fd81fc96ce56a6cc354a6}} 
+\hyperlink{structVector3D}{Vector3D} \& \hyperlink{structVector3D_a645dc0982d4fd81fc96ce56a6cc354a6}{operator/=} (float s)
+\begin{DoxyCompactList}\small\item\em Division Operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structVector3D_a66772c7b627b9722a911ba064d165c3e}\label{structVector3D_a66772c7b627b9722a911ba064d165c3e}} 
+\hyperlink{structVector3D}{Vector3D} \& \hyperlink{structVector3D_a66772c7b627b9722a911ba064d165c3e}{operator+=} (const \hyperlink{structVector3D}{Vector3D} \&v)
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structVector3D_a659cecf32e155fa6b6d97344a562df4d}\label{structVector3D_a659cecf32e155fa6b6d97344a562df4d}} 
+\hyperlink{structVector3D}{Vector3D} \& \hyperlink{structVector3D_a659cecf32e155fa6b6d97344a562df4d}{operator-\/=} (const \hyperlink{structVector3D}{Vector3D} \&v)
+\begin{DoxyCompactList}\small\item\em Subtraction operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structVector3D_aca5d15bdb846448e3cb73b072783f329}\label{structVector3D_aca5d15bdb846448e3cb73b072783f329}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{structVector3D_a9b6d194fcf526d7d4f9e902421285e94}\label{structVector3D_a9b6d194fcf526d7d4f9e902421285e94}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{structVector3D_af9728f1eba23b9ee091755346214f391}\label{structVector3D_af9728f1eba23b9ee091755346214f391}} 
+float {\bfseries z}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{structVector3D}{Vector3D} performs vector operations with 3-\/dimensions The purpose of this class is primarily for 3D graphics applications. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structVector3D_a7b0f18fa43c7a90588dedcd814122359}\label{structVector3D_a7b0f18fa43c7a90588dedcd814122359}} 
+\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\index{Vector3D@{Vector3D}!Vector3D@{Vector3D}}
+\subsubsection{\texorpdfstring{Vector3\+D()}{Vector3D()}}
+{\footnotesize\ttfamily Vector3\+D\+::\+Vector3D (\begin{DoxyParamCaption}\item[{float}]{a,  }\item[{float}]{b,  }\item[{float}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+The \char`\"{}\+Real\char`\"{} constructor we want to use. This initializes the values x,y,z 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structVector3D_a83d5f64613f79d60e080dc04689f1c2b}\label{structVector3D_a83d5f64613f79d60e080dc04689f1c2b}} 
+\index{Vector3D@{Vector3D}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!Vector3D@{Vector3D}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}}
+{\footnotesize\ttfamily \hyperlink{structVector3D}{Vector3D}\& Vector3\+D\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{float}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Multiplication Operator Multiply vector by a uniform-\/scalar. \mbox{\Hypertarget{structVector3D_a9ada0b9382fdaf3bade67438f829280d}\label{structVector3D_a9ada0b9382fdaf3bade67438f829280d}} 
+\index{Vector3D@{Vector3D}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector3D@{Vector3D}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float\& Vector3\+D\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Index operator, allowing us to access the individual x,y,z components of our vector. \mbox{\Hypertarget{structVector3D_aeb8dfce8e40587899758e9f7d5752dc6}\label{structVector3D_aeb8dfce8e40587899758e9f7d5752dc6}} 
+\index{Vector3D@{Vector3D}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector3D@{Vector3D}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const float\& Vector3\+D\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Index operator, allowing us to access the individual x,y,z components of our vector. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Tiny\+Math.\+hpp\end{DoxyCompactItemize}

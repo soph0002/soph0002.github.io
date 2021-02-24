@@ -1,0 +1,93 @@
+\hypertarget{classEntity}{}\section{Entity Class Reference}
+\label{classEntity}\index{Entity@{Entity}}
+
+
+A class used for abstracting methods univerally used for the game.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
+
+
+Inheritance diagram for Entity\+:
+% FIG 0
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntity_acb01d7c2e027979a2cada6fa9c943240}\label{classEntity_acb01d7c2e027979a2cada6fa9c943240}} 
+\hyperlink{classEntity_acb01d7c2e027979a2cada6fa9c943240}{Entity} (S\+D\+L\+\_\+\+Renderer $\ast$\hyperlink{classEntity_a2747dfdd9fa4fe743c8b80450bc99dbd}{renderer})
+\begin{DoxyCompactList}\small\item\em Creates an entity with an S\+DL renderer used for rendering this object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_a588098978eea6a3486b7361605ff3f0f}\label{classEntity_a588098978eea6a3486b7361605ff3f0f}} 
+virtual \hyperlink{classEntity_a588098978eea6a3486b7361605ff3f0f}{$\sim$\+Entity} ()
+\begin{DoxyCompactList}\small\item\em Destroys this entity and deallocates its place in memory. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classEntity_aec10420b2cfc1b9a367d018966c620d3}{Update} (float delta)
+\begin{DoxyCompactList}\small\item\em Updates this entity to its most recent form. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classEntity_a48b58f16934376de583771ddabcf5bdb}{Render} (float delta)
+\begin{DoxyCompactList}\small\item\em Renders this entity in its current form. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_aedb02f3a7501604c34cb58b796873ff8}\label{classEntity_aedb02f3a7501604c34cb58b796873ff8}} 
+bool \hyperlink{classEntity_aedb02f3a7501604c34cb58b796873ff8}{Collides} (\hyperlink{classEntity}{Entity} $\ast$other)
+\begin{DoxyCompactList}\small\item\em Checks for collisions with another given object at the location of this entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntity_abc2d19ee6ff26b8520428894da6a8f68}\label{classEntity_abc2d19ee6ff26b8520428894da6a8f68}} 
+float \hyperlink{classEntity_abc2d19ee6ff26b8520428894da6a8f68}{x}
+\begin{DoxyCompactList}\small\item\em Values indicating physical features and positions of this entity. (x, y position \& width, height) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEntity_af4966f81d91cc8f8d5eb9e9002240c49}\label{classEntity_af4966f81d91cc8f8d5eb9e9002240c49}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{classEntity_adadfcc784f30b51b8e49f8230a56b793}\label{classEntity_adadfcc784f30b51b8e49f8230a56b793}} 
+float {\bfseries width}
+\item 
+\mbox{\Hypertarget{classEntity_a4550dc1011f47f6c4bb86e564e7d605b}\label{classEntity_a4550dc1011f47f6c4bb86e564e7d605b}} 
+float {\bfseries height}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classEntity_a2747dfdd9fa4fe743c8b80450bc99dbd}\label{classEntity_a2747dfdd9fa4fe743c8b80450bc99dbd}} 
+S\+D\+L\+\_\+\+Renderer $\ast$ \hyperlink{classEntity_a2747dfdd9fa4fe743c8b80450bc99dbd}{renderer}
+\begin{DoxyCompactList}\small\item\em The S\+DL renderer with which this object is rendered. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class used for abstracting methods univerally used for the game. 
+
+Defines an entity as a class which gets rendered, updated, has a position, has a width and a height, and has collisions. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_a48b58f16934376de583771ddabcf5bdb}\label{classEntity_a48b58f16934376de583771ddabcf5bdb}} 
+\index{Entity@{Entity}!Render@{Render}}
+\index{Render@{Render}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily virtual void Entity\+::\+Render (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders this entity in its current form. 
+
+Used in the game loop to visually see the entity in its current state. 
+
+Reimplemented in \hyperlink{classBoard_a2cdb83c07225dd83366ce10ea2978dd8}{Board}, \hyperlink{classBall_a1103f2193c0e478926eb6af95a65d46e}{Ball}, and \hyperlink{classPaddle_a166255dfac354af75059ed4a72e1a0ee}{Paddle}.
+
+\mbox{\Hypertarget{classEntity_aec10420b2cfc1b9a367d018966c620d3}\label{classEntity_aec10420b2cfc1b9a367d018966c620d3}} 
+\index{Entity@{Entity}!Update@{Update}}
+\index{Update@{Update}!Entity@{Entity}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void Entity\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates this entity to its most recent form. 
+
+Used to maintain the most updated form of the state of each object. 
+
+Reimplemented in \hyperlink{classBoard_aa1fb89db8206ace3f973f2f911af4125}{Board}, \hyperlink{classBall_af6db0c50a2974beb4c27cb29c9a0e2df}{Ball}, and \hyperlink{classPaddle_a8a3aa86f567315423f92ecfb5fd3b6f5}{Paddle}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Entity.\+h\end{DoxyCompactItemize}

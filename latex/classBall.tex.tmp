@@ -1,0 +1,95 @@
+\hypertarget{classBall}{}\section{Ball Class Reference}
+\label{classBall}\index{Ball@{Ball}}
+
+
+Represents the ball in Breakout.  
+
+
+
+
+{\ttfamily \#include $<$Ball.\+h$>$}
+
+
+
+Inheritance diagram for Ball\+:
+% FIG 0
+
+
+Collaboration diagram for Ball\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBall_ab9ce613e29fbda8012d95ecc20bf9fe3}\label{classBall_ab9ce613e29fbda8012d95ecc20bf9fe3}} 
+\hyperlink{classBall_ab9ce613e29fbda8012d95ecc20bf9fe3}{Ball} (S\+D\+L\+\_\+\+Renderer $\ast$\hyperlink{classEntity_a2747dfdd9fa4fe743c8b80450bc99dbd}{renderer})
+\begin{DoxyCompactList}\small\item\em The constructor for a \hyperlink{classBall}{Ball}, takes in a, S\+D\+L\+\_\+\+Renderer with which the ball will be rendered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBall_a20f2f6ac0bf648f406a8e12e63429fcd}\label{classBall_a20f2f6ac0bf648f406a8e12e63429fcd}} 
+\hyperlink{classBall_a20f2f6ac0bf648f406a8e12e63429fcd}{$\sim$\+Ball} ()
+\begin{DoxyCompactList}\small\item\em Deconstructs this \hyperlink{classBall}{Ball} and deallocates the memory used for it. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_af6db0c50a2974beb4c27cb29c9a0e2df}{Update} (float delta)
+\begin{DoxyCompactList}\small\item\em Updates the state of the ball. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_a1103f2193c0e478926eb6af95a65d46e}{Render} (float delta)
+\begin{DoxyCompactList}\small\item\em Visually prints the ball to the screen. \end{DoxyCompactList}\item 
+void \hyperlink{classBall_a926a05c08b97fe1e294d100118e89761}{Set\+Direction} (float \hyperlink{classBall_acced71624506f92de62311c996253c3d}{dirx}, float diry)
+\begin{DoxyCompactList}\small\item\em Sets the direction of this ball. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBall_acced71624506f92de62311c996253c3d}\label{classBall_acced71624506f92de62311c996253c3d}} 
+float \hyperlink{classBall_acced71624506f92de62311c996253c3d}{dirx}
+\begin{DoxyCompactList}\small\item\em The current location of this \hyperlink{classBall}{Ball}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBall_a264b333062db9ab51f8a02ae1cfc8780}\label{classBall_a264b333062db9ab51f8a02ae1cfc8780}} 
+float {\bfseries diry}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Represents the ball in Breakout. 
+
+This class handles all of the movement and rendering of the ball in Breakout. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classBall_a1103f2193c0e478926eb6af95a65d46e}\label{classBall_a1103f2193c0e478926eb6af95a65d46e}} 
+\index{Ball@{Ball}!Render@{Render}}
+\index{Render@{Render}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Ball\+::\+Render (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Visually prints the ball to the screen. 
+
+Intended to be called with update such that the changes caused throughout the game are visible to the player. 
+
+Reimplemented from \hyperlink{classEntity_a48b58f16934376de583771ddabcf5bdb}{Entity}.
+
+\mbox{\Hypertarget{classBall_a926a05c08b97fe1e294d100118e89761}\label{classBall_a926a05c08b97fe1e294d100118e89761}} 
+\index{Ball@{Ball}!Set\+Direction@{Set\+Direction}}
+\index{Set\+Direction@{Set\+Direction}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{Set\+Direction()}{SetDirection()}}
+{\footnotesize\ttfamily void Ball\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{float}]{dirx,  }\item[{float}]{diry }\end{DoxyParamCaption})}
+
+
+
+Sets the direction of this ball. 
+
+Sets the direction of the \hyperlink{classBall}{Ball} to be in the given x, y values. \mbox{\Hypertarget{classBall_af6db0c50a2974beb4c27cb29c9a0e2df}\label{classBall_af6db0c50a2974beb4c27cb29c9a0e2df}} 
+\index{Ball@{Ball}!Update@{Update}}
+\index{Update@{Update}!Ball@{Ball}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Ball\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the state of the ball. 
+
+Intended to be called each tick, updates direction and state of the ball to match the game. 
+
+Reimplemented from \hyperlink{classEntity_aec10420b2cfc1b9a367d018966c620d3}{Entity}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Ball.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{classPaddle}{}\section{Paddle Class Reference}
+\label{classPaddle}\index{Paddle@{Paddle}}
+
+
+A class representing the paddle which the user controls in Breakout.  
+
+
+
+
+{\ttfamily \#include $<$Paddle.\+hpp$>$}
+
+
+
+Inheritance diagram for Paddle\+:
+% FIG 0
+
+
+Collaboration diagram for Paddle\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPaddle_a44ee1ad381e793703eb2c14f152c3d8c}\label{classPaddle_a44ee1ad381e793703eb2c14f152c3d8c}} 
+\hyperlink{classPaddle_a44ee1ad381e793703eb2c14f152c3d8c}{Paddle} (S\+D\+L\+\_\+\+Renderer $\ast$\hyperlink{classEntity_a2747dfdd9fa4fe743c8b80450bc99dbd}{renderer})
+\begin{DoxyCompactList}\small\item\em Creates a \hyperlink{classPaddle}{Paddle} with a S\+DL rendered which will be used to render the paddle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPaddle_ac03c6b92f0b9cd2e67edff4c318ad030}\label{classPaddle_ac03c6b92f0b9cd2e67edff4c318ad030}} 
+\hyperlink{classPaddle_ac03c6b92f0b9cd2e67edff4c318ad030}{$\sim$\+Paddle} ()
+\begin{DoxyCompactList}\small\item\em Destroys this \hyperlink{classPaddle}{Paddle} and deallocates the memory for it. \end{DoxyCompactList}\item 
+void \hyperlink{classPaddle_a8a3aa86f567315423f92ecfb5fd3b6f5}{Update} (float delta)
+\begin{DoxyCompactList}\small\item\em Updates this \hyperlink{classPaddle}{Paddle} to its most recent form. \end{DoxyCompactList}\item 
+void \hyperlink{classPaddle_a166255dfac354af75059ed4a72e1a0ee}{Render} (float delta)
+\begin{DoxyCompactList}\small\item\em Renders this \hyperlink{classPaddle}{Paddle} at its current state. \end{DoxyCompactList}\item 
+void \hyperlink{classPaddle_ac168c216a591b78851142d2160cebf9b}{Set\+Direction} (float dirx)
+\begin{DoxyCompactList}\small\item\em Sets the direction the paddle is going in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class representing the paddle which the user controls in Breakout. 
+
+Extends entity such that it renders and updates accordingly. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPaddle_a166255dfac354af75059ed4a72e1a0ee}\label{classPaddle_a166255dfac354af75059ed4a72e1a0ee}} 
+\index{Paddle@{Paddle}!Render@{Render}}
+\index{Render@{Render}!Paddle@{Paddle}}
+\subsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Paddle\+::\+Render (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Renders this \hyperlink{classPaddle}{Paddle} at its current state. 
+
+Used to display the paddle on the screen at its current state. 
+
+Reimplemented from \hyperlink{classEntity_a48b58f16934376de583771ddabcf5bdb}{Entity}.
+
+\mbox{\Hypertarget{classPaddle_ac168c216a591b78851142d2160cebf9b}\label{classPaddle_ac168c216a591b78851142d2160cebf9b}} 
+\index{Paddle@{Paddle}!Set\+Direction@{Set\+Direction}}
+\index{Set\+Direction@{Set\+Direction}!Paddle@{Paddle}}
+\subsubsection{\texorpdfstring{Set\+Direction()}{SetDirection()}}
+{\footnotesize\ttfamily void Paddle\+::\+Set\+Direction (\begin{DoxyParamCaption}\item[{float}]{dirx }\end{DoxyParamCaption})}
+
+
+
+Sets the direction the paddle is going in. 
+
+Uses user input passed in as dirx to set the direction of the paddle. \mbox{\Hypertarget{classPaddle_a8a3aa86f567315423f92ecfb5fd3b6f5}\label{classPaddle_a8a3aa86f567315423f92ecfb5fd3b6f5}} 
+\index{Paddle@{Paddle}!Update@{Update}}
+\index{Update@{Update}!Paddle@{Paddle}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Paddle\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates this \hyperlink{classPaddle}{Paddle} to its most recent form. 
+
+Used to maintain the most updated form of the state of the paddle. 
+
+Reimplemented from \hyperlink{classEntity_aec10420b2cfc1b9a367d018966c620d3}{Entity}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Paddle.\+hpp\end{DoxyCompactItemize}
